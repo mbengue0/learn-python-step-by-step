@@ -52,3 +52,39 @@ print(correct_rgba)
 # Output: ['Red', 'Green', 'Blue', 'Alpha']
 print(rgba)
 # Output: ['Red', 'Green', 'Blue', 'Alph']
+
+# Assignment to slices can change list size or clear it entirely; use len() to 
+# get list length; lists can be nested, containing other lists for complex structures.
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+print(letters)
+# Output: ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+
+# Replace some values
+letters[2:5] = ['C', 'D', 'E']
+print(letters)
+# Output: ['a', 'b', 'C', 'D', 'E', 'f', 'g']
+
+# Now remove them
+letters[2:5] = []
+print(letters)
+# Output: ['a', 'b', 'f', 'g']
+
+# Clear the list by replacing all elements with an empty list
+letters[:] = []
+print(letters)
+# Output: []
+
+# The built-in function len() also applies to lists
+letters = ['a', 'b', 'c', 'd']
+print(len(letters))
+# Output: 4
+
+# Nesting lists (lists containing other lists)
+a = ['a', 'b', 'c']
+n = [1, 2, 3]
+x = [a, n]
+print(x)
+# Output: [['a', 'b', 'c'], [1, 2, 3]]
+print(x[0])      # Output: ['a', 'b', 'c']
+print(x[0][1])   # Output: 'b'
