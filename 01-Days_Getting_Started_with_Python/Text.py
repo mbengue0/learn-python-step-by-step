@@ -58,3 +58,15 @@ Usage: thingy [OPTIONS]
 
 print(3 * 'un' + 'ium')
 # Output: unununium
+
+# Two or more string literals (enclosed in quotes) next to each other are 
+# automatically concatenated.
+print('Py' 'thon')
+# Output: Hello World
+
+# This feature is particularly useful when you want to break long strings.
+
+text = ('Put several strings within parentheses '
+        'to have them joined together.')
+print(text)
+#output: Put several strings within parentheses to have them joined together.
