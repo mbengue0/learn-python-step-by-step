@@ -14,3 +14,11 @@ while a < 10:
 # 3
 # 5
 # 8
+
+""" 
+Multiple assignment (a, b = 0, 1) sets variables simultaneously, with right-hand 
+expressions evaluated left-to-right before assignment; a while loop runs while 
+a < 10 is true (non-zero or non-empty sequences are true, zero/empty are false), 
+using comparison operators (<, >, ==, <=, >=, !=); the loop body uses indentation 
+for grouping, requiring a blank line in interactive mode to signal completion.
+"""
